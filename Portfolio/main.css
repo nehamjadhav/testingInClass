@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;;
+}
+
+body{
+    background-color: #1B211A;
+    color: white;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    padding: 16px 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EBD5AB;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+}
+nav{
+    margin-left: 0;
+}
+nav ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    color: #1B211A;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #1B211A;
+    font-weight: bold;
+    font-size: 18px;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.intro img{
+    border-radius: 50%;
+    border: 3px solid #EBD5AB;
+}
+.intro .left-part{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.about{
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #57703c;
+}
+.about h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about p{
+    line-height: 2;
+    text-justify: auto;
+    font-size: 18.5px;
+}
+.project{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.project-list{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    line-height: 2;
+}
+.project h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact{
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #57703c;
+    justify-content: center;
+    align-items: center;
+}
+.contact h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18.5px;
+}
+.contact form input, .contact form textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+.contact form button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EBD5AB;
+    color: #1B211A;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #EBD5AB;
+    color: #1B211A;
+}
+
+/* =========================
+   Tablet View (≤ 1024px)
+   ========================= */
+   @media (max-width: 1024px) {
+
+    nav ul {
+        gap: 40px;
+    }
+
+    .intro {
+        margin-left: 80px;
+        margin-right: 80px;
+        flex-direction: column;
+    }
+
+    .intro .left-part {
+        margin: 40px 0;
+    }
+
+    .about,
+    .contact {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .project {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .project-list {
+        flex-wrap: wrap;
+    }
+}
+
+/* =========================
+   Mobile View (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 20px;
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .intro {
+        margin: 40px 20px 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 180px;
+    }
+
+    .intro .left-part {
+        margin: 20px 0;
+    }
+
+    .about,
+    .contact {
+        padding: 60px 24px;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .project {
+        padding: 60px 24px;
+    }
+
+    .project-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact form {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   Small Mobile View (≤ 480px)
+   ========================= */
+@media (max-width: 480px) {
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .intro img {
+        width: 150px;
+    }
+
+    .about h2,
+    .project h2,
+    .contact h2 {
+        font-size: 22px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 16px;
+    }
+}
